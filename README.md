@@ -19,7 +19,26 @@ POSTGRES in local machine.
 ```
    ❯ sudo docker-compose up -d
 ```
-(N.B :For this project port for POSTGRES is **5444**, have a look on **application.properties** file)
 
+Default Admin Credential: 
+```
+username=root
+password=root
+```
+
+Database Related config:
+```
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5432/scores
+spring.datasource.username=root
+spring.datasource.password=root
+server.port=8999
+
+
+spring.security.user.name=root
+spring.security.user.password=root
+```
 
 Enjoy !!

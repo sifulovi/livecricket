@@ -1,14 +1,14 @@
 version: '3.3'
 
 services:
-  postgres_v1:
-    container_name: postgres_v1
+  postgres_v3:
+    container_name: postgres_v3
     image: postgres
     volumes:
       - scores:/var/lib/postgresql/data
     restart: unless-stopped
     ports:
-      - '5444:5432'
+      - '5432:5432'
     environment:
       POSTGRES_ROOT_PASSWORD: postgres
       POSTGRES_DATABASE: scores

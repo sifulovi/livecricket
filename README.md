@@ -41,4 +41,8 @@ spring.security.user.name=root
 spring.security.user.password=root
 ```
 
+Application base Url:
+```
+http://localhost:8999/
+```
 Enjoy !!
